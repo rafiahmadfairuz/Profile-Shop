@@ -1,0 +1,356 @@
+.accordion-item {
+  border: none !important;
+}
+
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+.accordion-button {
+  background-color: white !important;
+}
+.accordion-button:active {
+  background-color: white !important;
+}
+
+.navbar-toggler,
+.btn-close {
+  border: none !important;
+}
+.navbar-toggler,
+.btn-close:active,
+.navbar-toggler,
+.btn-close:focus,
+.navbar-toggler,
+.btn-close:visited {
+  outline: none !important;
+  border: none !important;
+}
+
+
+.hoper .sub-menu {
+  display: none;
+  position: absolute;
+  width: 200px; 
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 20px 45px #00000020;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease-in-out 0.1s;
+  left: 0;
+  top: 210%;
+}
+
+
+.hoper .nav-item:hover .sub-menu {
+  display: block;
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+}
+
+
+.hoper .nav-item {
+  position: relative;
+  display: inline-block; 
+}
+
+
+
+.bayang {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 0.1px solid rgb(197, 170, 170) !important;
+}
+
+#hero,#about,#isi-2 {
+  background-color: aliceblue;
+}
+
+#hero p {
+  color: rgb(5, 5, 216);
+}
+#hero span {
+  font-size: 5rem;
+  line-height: 80px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(10, 10, 138);
+}
+
+.angka {
+  font-size: 4rem;
+  color: rgb(10, 10, 138);
+}
+
+.angka-p {
+  font-size: 1.3em;
+  color: rgb(10, 10, 138);
+}
+
+#hero .btn {
+  background: rgb(64, 66, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 66, 179, 1) 0%,
+    rgba(28, 28, 149, 1) 30%,
+    rgba(8, 0, 144, 1) 44%
+  );
+  color: white;
+}
+
+
+@keyframes scroll {
+  from {
+     transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.s {
+   overflow: hidden;
+  padding: 30px 0;
+  background-color: white;
+  white-space: nowrap;
+}
+
+.scroll {
+  
+  display: inline-block;
+  animation: 32s scroll linear infinite;
+}
+
+.scroll img {
+  height: 100px;
+  margin-right: 50px;
+}
+
+.s:hover .scroll {
+  animation-play-state: paused;
+}
+
+
+.b {
+   overflow: hidden;
+ 
+  white-space: nowrap;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+.scroll {
+  
+  display: inline-block;
+  animation: 10s scroll linear infinite;
+}
+
+.b .scroll img {
+  background-color: white;
+  padding: 7px;
+  border-radius: 10px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+#isi-2 {
+  height: 570px;
+}
+
+
+
+
+.card-title {
+  font-size: 4rem;
+}
+.card-text {
+  font-size: 20px;
+}
+
+.card-group {
+  -webkit-box-shadow: 13px 12px 0px 3px rgba(31,0,31,1);
+-moz-box-shadow: 13px 12px 0px 3px rgba(31,0,31,1);
+box-shadow: 13px 12px 0px 3px rgba(31,0,31,1);
+}
+
+
+
+@media screen and (min-width:1600px) {
+
+  .footer {
+    background-color: aqua;
+    height: 700px;
+    position: relative;
+  }
+  .ft-ngambang {
+    position: absolute;
+  
+    bottom: -10%;
+    right: 15%;
+    z-index: 9;
+  }
+
+
+}
+.footer {
+  background-color: aqua;
+  height: 700px;
+  position: relative;
+}
+
+.footer h1 {
+  color: rgb(3, 3, 102);
+}
+
+.ft-ngambang {
+  position: absolute;
+
+  bottom: -12%;
+  right: 1%;
+  left: 2%;
+  z-index: 9;
+}
+
+.ft-ngambang .judul-footer {
+  color: rgb(3, 3, 102);
+}
+
+.ft-ngambang li {
+  color: rgb(4, 4, 165);
+}
+
+.bwh-ft {
+  height: 200px;
+  
+}
+
+
+@media screen and (min-width:1600px) {
+
+  .footer {
+    background-color: aqua;
+    height: 700px;
+    position: relative;
+  }
+  .ft-ngambang {
+    position: absolute;
+  
+    bottom: -10%;
+   
+    z-index: 9;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 770px) {
+  #hero span {
+    font-size: 2rem;
+    line-height: 30px;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(10, 10, 138);
+  }
+
+  .angka {
+    font-size: 2.2rem;
+    color: rgb(10, 10, 138);
+  }
+  .angka-p {
+    font-size: 0.9em;
+    color: rgb(10, 10, 138);
+  }
+
+  .text-scroll {
+    font-size: 0.8em;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+  .card-semi {
+    font-size: 20px;
+  }
+
+  .mz h1 {
+    font-size: 0.8rem;
+  }
+
+  .hh h1 {
+    font-size: 15px;
+  }
+
+  .jj p {
+    text-align: right !important;
+  }
+
+
+  
+  
+  .footer h1 {
+    color: rgb(3, 3, 102);
+    font-size: 17px;
+  }
+  
+ 
+  .ft-ngambang .judul-footer {
+    color: rgb(3, 3, 102);
+  }
+  
+  .ft-ngambang li {
+    color: rgb(4, 4, 165);
+  }
+  
+  .bwh-ft {
+    height: 80px;
+    
+  }
+
+}
+
+
+@media screen and (min-width: 771px) and (max-width: 991px) {
+  .footer h1 {
+    color: rgb(3, 3, 102);
+    font-size: 17px;
+  }
+
+  .footer {
+    background-color: aqua;
+    height: 700px;
+    position:static;
+  }
+
+  .ft-ngambang {
+    position: static;
+   
+  }
+  
+ 
+  .ft-ngambang .judul-footer {
+    color: rgb(3, 3, 102);
+  }
+  
+  .ft-ngambang li {
+    color: rgb(4, 4, 165);
+  }
+  
+  .bwh-ft {
+    height: 80px;
+    
+  }
+}
